@@ -5,8 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Linking Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!--Linking CSS-->
+    <!--Linking custom CSS-->
     <link rel="stylesheet" href="./styles/home.css">
+    <!--Linking FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Linking SplideJS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/themes/splide-default.min.css">
     <!--Linking Poppins regular 300, 400 and 500 from Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +21,12 @@
     
 
 <!-- Upper Corousel starts -->
-<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="10000">
         <img src="https://picsum.photos/id/10/1280/450" class="d-block w-100" alt="...">
@@ -29,61 +38,75 @@
         <img src="https://picsum.photos/id/10/1280/450" class="d-block w-100" alt="...">
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
   </div>
 <!-- Upper corousel ends -->
 
 
-
-<!-- About us starts -->
-
-<!-- About us ends -->
+<!-- About Us starts -->
+  <section class="container">
+    <h2>About Us</h2>
+    <p class="about">
+      NITS Eco Club is an officially recognised club under the Gymkhana Union Body, NIT Silchar. The principal objective of this club is to keep the campus clean, and preserve the diverse flora and fauna our institution has to offer. Under this club, NIT Silchar has achieved greater heights. It has been placed 200th among 956 universites worldwide, and 5th among universities in India by the UI Green Metric World University Rankings, 2021, which is a matter of great pride for the fraternity of NIT Silchar.
+    </p>
+  </section>
+<!-- About Us ends -->
 
 
 <!-- Achivements starts -->
 <section class="container">
     <h2>Achievements</h2>
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-lg-3 col-md-6 col-xs-12 py-3 py-lg-0">
+            <!--One achievement card-->
             <div class = "card card-shadow">
                 <img class="card-img-top" src="./images/achievements.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  <h5 class="card-title text-center">Solar Panel</h5>
+                  <div class="card-content">
+                    <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  </div>
+                </div>
+              </div>
+              <!--Card ends-->
+        </div>
+        <div class="col-lg-3 col-md-6 col-xs-12 py-3 py-lg-0">
+            <div class = "card card-shadow">
+                <img class="card-img-top" src="./images/achievements.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Solar Panel</h5>
+                  <div class="card-content">
+                    <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  </div>
                 </div>
               </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-lg-3 col-md-6 col-xs-12 py-3 py-lg-0">
             <div class = "card card-shadow">
                 <img class="card-img-top" src="./images/achievements.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  <h5 class="card-title text-center">Solar Panel</h5>
+                  <div class="card-content">
+                    <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  </div>
                 </div>
               </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-lg-3 col-md-6 col-xs-12 py-3 py-lg-0">
             <div class = "card card-shadow">
                 <img class="card-img-top" src="./images/achievements.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
-                </div>
-              </div>
-        </div>
-        <div class="col-sm-3">
-            <div class = "card card-shadow">
-                <img class="card-img-top" src="./images/achievements.jpg" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  <h5 class="card-title text-center">Solar Panel</h5>
+                  <div class="card-content">
+                    <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  </div>
                 </div>
               </div>
         </div>
@@ -92,26 +115,29 @@
 <!-- Achivements ends -->
 
 
-
 <!-- Green initiatives starts -->
 <section class="container">
     <h2>Green Initiatives</h2>
     <div class="row">
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-12 py-3 py-sm-0">
             <div class = "card card-shadow">
                 <img class="card-img-top" src="./images/initiatives.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  <h5 class="card-title text-center">Solar Panel</h5>
+                  <div class="card-content">
+                    <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  </div>
                 </div>
               </div>
         </div>
-        <div class="col-sm-6">
+        <div class="col-sm-6 col-xs-12 py-3 py-sm-0">
             <div class = "card card-shadow">
                 <img class="card-img-top" src="./images/initiatives.jpg" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  <h5 class="card-title text-center">Solar Panel</h5>
+                  <div class="card-content">
+                    <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  </div>
                 </div>
               </div>
         </div>
@@ -120,44 +146,46 @@
 <!-- green initiatives ends -->
 
 
-
 <!-- upcoming events starts -->
 <section class="container">
     <h2>Upcoming Events</h2>
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-4 col-xs-12  py-3 py-sm-0">
             <div class = "card card-shadow">
                 <img class="card-img-top" src="./images/events.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  <h5 class="card-title">A walk for healthy environment</h5>
+                  <div class="card-content">
+                    <p class="event-header">Paul Walker, CEO of Green Organization</p>
+                    <p class="event-time"><i class="fa-regular fa-calendar"></i>Sunday 2 Dec 2022 <i class="fa-regular fa-clock"></i>10 A.M.</p>
+                    <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  </div>
                 </div>
               </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4 col-xs-12  py-3 py-sm-0">
             <div class = "card card-shadow">
                 <img class="card-img-top" src="./images/events.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  <h5 class="card-title">A walk for healthy environment</h5>
+                  <div class="card-content">
+                    <p class="event-header">Paul Walker, CEO of Green Organization</p>
+                    <p class="event-time"><i class="fa-regular fa-calendar"></i>Sunday 2 Dec 2022 <i class="fa-regular fa-clock"></i>10 A.M.</p>
+                    <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  </div>
                 </div>
               </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4 col-xs-12  py-3 py-sm-0">
             <div class = "card card-shadow">
                 <img class="card-img-top" src="./images/events.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
-                </div>
-              </div>
-        </div>
-        <div class="col-sm-3">
-            <div class = "card card-shadow">
-                <img class="card-img-top" src="./images/events.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  <h5 class="card-title">A walk for healthy environment</h5>
+                  <div class="card-content">
+                    <p class="event-header">Paul Walker, CEO of Green Organization</p>
+                    <p class="event-time"><i class="fa-regular fa-calendar"></i>Sunday 2 Dec 2022 <i class="fa-regular fa-clock"></i>10 A.M.</p>
+                    <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  </div>
                 </div>
               </div>
         </div>
@@ -166,44 +194,56 @@
 <!-- upcoming events ends -->
 
 
-
 <!-- blog starts -->
 <section class="container">
     <h2>Blog</h2>
     <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-4 col-xs-12  py-3 py-sm-0">
             <div class = "card card-shadow">
                 <img class="card-img-top" src="./images/blog.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  <h5 class="card-title">Explore Wild</h5>
+                  <div class="card-content">
+                    <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                    <p class="blog-footer d-flex justify-content-between">
+                      <span class="blog-date"><i class="fa-regular fa-calendar"></i>Sunday 2 Dec 2022 </span>
+                      <a href="" class="blog-continue">Continue ></a>
+
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4 col-xs-12  py-3 py-sm-0">
             <div class = "card card-shadow">
                 <img class="card-img-top" src="./images/blog.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  <h5 class="card-title">Eco Agitations</h5>
+                  <div class="card-content">
+                    <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                    <p class="blog-footer d-flex justify-content-between">
+                      <span class="blog-date"><i class="fa-regular fa-calendar"></i>Sunday 2 Dec 2022 </span>
+                      <a href="" class="blog-continue">Continue ></a>
+
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4 col-xs-12  py-3 py-sm-0">
             <div class = "card card-shadow">
                 <img class="card-img-top" src="./images/blog.png" alt="Card image cap">
                 <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
-                </div>
-              </div>
-        </div>
-        <div class="col-sm-3">
-            <div class = "card card-shadow">
-                <img class="card-img-top" src="./images/blog.png" alt="Card image cap">
-                <div class="card-body">
-                  <h5 class="card-title">Solar Panel</h5>
-                  <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                  <h5 class="card-title">The Eco Stand</h5>
+                  <div class="card-content">
+                    <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliq</p>
+                    <p class="blog-footer d-flex justify-content-between">
+                      <span class="blog-date"><i class="fa-regular fa-calendar"></i>Sunday 2 Dec 2022 </span>
+                      <a href="" class="blog-continue">Continue ></a>
+                    </p>
+                  </div>
                 </div>
               </div>
         </div>
@@ -212,10 +252,100 @@
 <!-- blog ends -->
 
 
-
 <!-- beauty of nits starts -->
-
+<section class="container">
+  <h2>Beauty of NITS</h2>
+  <!--Hero image of bottom carousel-->
+  <section id="main-slider" class="splide" aria-label="My Awesome Gallery">
+    <div class="splide__track">
+      <ul class="splide__list">
+        <li class="splide__slide">
+          <img
+            src="./images/beauty1.png"
+            alt=""
+          />
+        </li>
+        <li class="splide__slide">
+          <img
+            src="./images/beauty1.png"
+            alt=""
+          />
+        </li>
+        <li class="splide__slide">
+          <img
+            src="./images/beauty1.png"
+            alt=""
+          />
+        </li>
+        <li class="splide__slide">
+          <img
+            src="./images/beauty1.png"
+            alt=""
+          />
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!--Thumbnails for bottom carousel-->
+  <ul id="thumbnails" class="thumbnails">
+    <li class="thumbnail">
+      <img src="./images/beauty1.png" alt="" />
+    </li>
+    <li class="thumbnail">
+      <img src="./images/beauty1.png" alt="" />
+    </li>
+    <li class="thumbnail">
+      <img src="./images/beauty1.png" alt="" />
+    </li>
+    <li class="thumbnail">
+      <img src="./images/beauty1.png" alt="" />
+    </li>
+  </ul>
+  
+</section>
 <!-- beauty of nits ends -->
+
+
+<!--Importing SplideJS and SplideJS script-->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js"></script>
+<script>
+ var splide = new Splide("#main-slider", {
+        width: screen.width * 0.85,
+        height: screen.width * 0.85 *0.5625,
+        pagination: false,
+        cover: true
+      });
+
+      var thumbnails = document.getElementsByClassName("thumbnail");
+      var current;
+
+      for (var i = 0; i < thumbnails.length; i++) {
+        initThumbnail(thumbnails[i], i);
+      }
+
+      function initThumbnail(thumbnail, index) {
+        thumbnail.addEventListener("click", function () {
+          splide.go(index);
+        });
+      }
+
+      splide.on("mounted move", function () {
+        var thumbnail = thumbnails[splide.index];
+
+        if (thumbnail) {
+          if (current) {
+            current.classList.remove("is-active");
+          }
+
+          thumbnail.classList.add("is-active");
+          current = thumbnail;
+        }
+      });
+
+      splide.mount();
+</script>
+
+<!--Importing Bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 </body>
